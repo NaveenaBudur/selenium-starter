@@ -7,13 +7,14 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestCases {
     ChromeDriver driver;
-    public TestCases()
+    public TestCases() throws InterruptedException
     {
         System.out.println("Constructor: TestCases");
         WebDriverManager.chromedriver().timeout(30).setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+       // driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+        Thread.sleep(2000);
 
     }
 

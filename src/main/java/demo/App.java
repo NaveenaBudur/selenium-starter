@@ -3,26 +3,58 @@
  */
 package demo;
 import java.net.MalformedURLException;
-
-
 public class App {
-    public void getGreeting() throws InterruptedException, MalformedURLException {
+    public void getGreeting() throws InterruptedException, MalformedURLException{
         //TestCases tests = new TestCases(); // Initialize your test class
 
         //TODO: call your test case functions one after other here
 
-       // tests.testCase01();
+        // tests.testCase01();
 
         //END Tests
 
 
-       // tests.endTest(); // End your test by connections and closing browser
-    	Search_Amazon search = new Search_Amazon();
-    	search.searchAmazon();
-    	search.endTest();
+       //tests.endTest(); // End your test by connections and closing browser
+    	
+    //uncomment Testcase:1 for Search_Amazon;
+    //Search_Amazon search = new Search_Amazon();
+    //search.searchAmazon();
+    //search.endTest();
+    	
+    //uncomment Testcase:2 for Automate_count_hyperlinks
+    //BookMyShow bms = new BookMyShow();
+    //bms.countOfAllHyperlinks();
+    //bms.endTest();
+    	
+    //uncomment Testcase:3 for Automate_image_urls
+    //BookMyShow2 bms2 = new BookMyShow2();
+    //bms2.countOfAllImageURLs();
+    //bms2.endTest();
+    	
+    //uncomment Testcase:4 Automate_window_handle
+    // Automate_window_handle window = new  Automate_window_handle ();
+    //window.getWindowHandle();
+    //window.endTest();
+    	
+    //uncomment Testcase:5 Automate_nested_frames_text
+    //Nested_frames frames = new Nested_frames();
+    // frames.nestedFrames();
+    //frames.endTest();
+    	
+   //uncomment Testcase:6 Automate_imdb_ratings
+   //   IMDB_ratings ratings = new IMDB_ratings();
+   //   ratings.imdb_ratings();
+   //   ratings.endTest(); 
+     
+   //uncomment Testcase:7 Automat_post_on_linkedin
+   //postOnLinkedin postlin = new postOnLinkedin();
+   //postlin.post();
+   //postlin.endTest();
+    	 
     }
 
     public static void main(String[] args) throws InterruptedException, MalformedURLException {
+    	
         new App().getGreeting();
     }
-}
+    }
